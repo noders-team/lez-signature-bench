@@ -8,6 +8,14 @@ measured end-to-end through the RISC0 prover on live gateway payloads.
 Built by [NODERS](https://noders.team) as a feasibility prototype for
 [Logos RFP-020 — RedStone Off-Chain Oracle Adaptor for LEZ](https://github.com/logos-co/rfp/blob/master/RFPs/RFP-020-redstone-oracle-adaptor.md).
 
+![Live demo: fetching a fresh redstone-primary-prod snapshot and proving XMR/USD 3-of-5 verification in RISC0](docs/redstone-demo.gif)
+
+*Live run on Apple M4 Pro: a fresh gateway snapshot is fetched, three
+`redstone-primary-prod` signers are recovered in-guest, and a real STARK
+receipt is produced. Proving idle time is compressed in the recording;
+the actual wall-clock time is printed in the output (`prove=154.45s`).
+Replayable source: [docs/redstone-demo.cast](docs/redstone-demo.cast).*
+
 ## What it adds
 
 - `methods/guest/src/lib.rs` — `redstone` module: the adaptor verification
