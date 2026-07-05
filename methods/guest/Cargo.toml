@@ -44,3 +44,8 @@ test = false
 name = "noop"
 path = "src/bin/noop.rs"
 test = false
+
+[[bin]]
+name = "redstone"
+path = "src/bin/redstone.rs"
+test = false
