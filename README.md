@@ -1,11 +1,12 @@
 # lez-signature-bench
 
-> ⚠️ **AI-generated codebase — research bench only.** This repository
-> was produced with AI assistance to get a rough indication of
-> signature-verification cost on RISC Zero / LEZ. It has not been
-> audited. **It MUST NOT be used in any mainnet program** or any
-> production system. Use it for measurement, comparison, and
-> intuition-building — nothing else.
+> **Research prototype for [Logos RFP-020](https://github.com/logos-co/rfp/blob/master/RFPs/RFP-020-redstone-oracle-adaptor.md).**
+> This fork extends [fryorcraken/lez-signature-bench](https://github.com/fryorcraken/lez-signature-bench)
+> with RedStone payload verification: real gateway data packages parsed,
+> signature-recovered, and proven inside a LEZ guest. See
+> **[README-REDSTONE.md](README-REDSTONE.md)** for the write-up, measured
+> numbers, and a live-run demo GIF. Built for feasibility measurement on
+> testnet/localnet; not audited for production use.
 
 A comparative benchmark of common signature-verification schemes
 inside the [Logos Execution Zone (LEZ)](https://github.com/logos-blockchain/logos-execution-zone)

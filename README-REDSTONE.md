@@ -63,5 +63,5 @@ RISC0_DEV_MODE=0 cargo run --release --bin redstone_bench -- \
   --json fixtures/redstone-latest.json --feed XMR --n 3 --threshold 3
 ```
 
-Inherits the upstream caveat: research bench only, not audited, not for
-production use.
+Research bench for feasibility measurement on testnet/localnet; not
+audited for production use.
